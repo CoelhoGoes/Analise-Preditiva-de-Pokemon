@@ -1,11 +1,22 @@
-📊 Análise Preditiva de Pokémon: Catch Rate & Agrupamento
-Este projeto aplica técnicas avançadas de Estatística e Machine Learning para analisar dados de Pokémon. O objetivo é prever a dificuldade de captura (CatchRate) e classificar os Pokémon em seus respectivos grupos (Lendários, Míticos, Iniciais, etc.) com base em seus atributos de combate.
+Aqui está todo o conteúdo do README.md formatado e pronto para copiar e colar no seu arquivo.
 
-🗂️ Estrutura do Repositório
+Markdown
+
+# 📊 Análise Preditiva de Pokémon: Catch Rate & Agrupamento
+
+![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python)
+![Status](https://img.shields.io/badge/Status-Concluído-green?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
+
+Este projeto aplica técnicas avançadas de **Estatística** e **Machine Learning** para analisar dados de Pokémon. O objetivo é prever a dificuldade de captura (`CatchRate`) e classificar os Pokémon em seus respectivos grupos (Lendários, Míticos, Iniciais, etc.) com base em seus atributos de combate.
+
+---
+
+## 🗂️ Estrutura do Repositório
+
 A organização do projeto segue a seguinte estrutura:
 
-Plaintext
-
+```text
 📁 Pokemon-Analytics/
 │
 ├── 📓 análise pokemon.ipynb       # Notebook de EDA (Limpeza, Visualização e Testes Estatísticos)
@@ -71,7 +82,7 @@ Clone o repositório:
 
 Bash
 
-git clone https://github.com/seu-usuario/seu-repo.git
+git clone [https://github.com/seu-usuario/seu-repo.git](https://github.com/seu-usuario/seu-repo.git)
 cd seu-repo
 Instale as dependências: Certifique-se de ter o Python instalado e execute:
 
