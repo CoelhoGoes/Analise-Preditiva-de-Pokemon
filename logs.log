@@ -37242,3 +37242,477 @@ Increase the number of iterations (max_iter) or scale the data as shown in:
 2025-12-10 00:02:50,869:INFO:Random Forest Regressor Imported successfully
 2025-12-10 00:02:50,878:INFO:Starting cross validation
 2025-12-10 00:02:50,882:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-12-10 00:02:51,762:INFO:Calculating mean and std
+2025-12-10 00:02:51,762:INFO:Creating metrics dataframe
+2025-12-10 00:02:51,764:INFO:Uploading results into container
+2025-12-10 00:02:51,764:INFO:Uploading model into container now
+2025-12-10 00:02:51,764:INFO:_master_model_container: 13
+2025-12-10 00:02:51,764:INFO:_display_container: 2
+2025-12-10 00:02:51,768:INFO:RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='squared_error',
+                      max_depth=None, max_features=1.0, max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, monotonic_cst=None,
+                      n_estimators=100, n_jobs=-1, oob_score=False,
+                      random_state=42, verbose=0, warm_start=False)
+2025-12-10 00:02:51,768:INFO:create_model() successfully completed......................................
+2025-12-10 00:02:51,898:INFO:SubProcess create_model() end ==================================
+2025-12-10 00:02:51,898:INFO:Creating metrics dataframe
+2025-12-10 00:02:51,908:INFO:Initializing Extra Trees Regressor
+2025-12-10 00:02:51,911:INFO:Total runtime is 0.1767559925715129 minutes
+2025-12-10 00:02:51,914:INFO:SubProcess create_model() called ==================================
+2025-12-10 00:02:51,914:INFO:Initializing create_model()
+2025-12-10 00:02:51,915:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001BED95DC510>, estimator=et, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001BED9F1D3D0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-12-10 00:02:51,915:INFO:Checking exceptions
+2025-12-10 00:02:51,915:INFO:Importing libraries
+2025-12-10 00:02:51,915:INFO:Copying training dataset
+2025-12-10 00:02:51,922:INFO:Defining folds
+2025-12-10 00:02:51,922:INFO:Declaring metric variables
+2025-12-10 00:02:51,926:INFO:Importing untrained model
+2025-12-10 00:02:51,930:INFO:Extra Trees Regressor Imported successfully
+2025-12-10 00:02:51,938:INFO:Starting cross validation
+2025-12-10 00:02:51,942:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-12-10 00:02:53,099:INFO:Calculating mean and std
+2025-12-10 00:02:53,102:INFO:Creating metrics dataframe
+2025-12-10 00:02:53,105:INFO:Uploading results into container
+2025-12-10 00:02:53,106:INFO:Uploading model into container now
+2025-12-10 00:02:53,106:INFO:_master_model_container: 14
+2025-12-10 00:02:53,106:INFO:_display_container: 2
+2025-12-10 00:02:53,107:INFO:ExtraTreesRegressor(bootstrap=False, ccp_alpha=0.0, criterion='squared_error',
+                    max_depth=None, max_features=1.0, max_leaf_nodes=None,
+                    max_samples=None, min_impurity_decrease=0.0,
+                    min_samples_leaf=1, min_samples_split=2,
+                    min_weight_fraction_leaf=0.0, monotonic_cst=None,
+                    n_estimators=100, n_jobs=-1, oob_score=False,
+                    random_state=42, verbose=0, warm_start=False)
+2025-12-10 00:02:53,107:INFO:create_model() successfully completed......................................
+2025-12-10 00:02:53,234:INFO:SubProcess create_model() end ==================================
+2025-12-10 00:02:53,235:INFO:Creating metrics dataframe
+2025-12-10 00:02:53,245:INFO:Initializing AdaBoost Regressor
+2025-12-10 00:02:53,245:INFO:Total runtime is 0.19898481766382856 minutes
+2025-12-10 00:02:53,248:INFO:SubProcess create_model() called ==================================
+2025-12-10 00:02:53,248:INFO:Initializing create_model()
+2025-12-10 00:02:53,249:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001BED95DC510>, estimator=ada, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001BED9F1D3D0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-12-10 00:02:53,249:INFO:Checking exceptions
+2025-12-10 00:02:53,249:INFO:Importing libraries
+2025-12-10 00:02:53,249:INFO:Copying training dataset
+2025-12-10 00:02:53,256:INFO:Defining folds
+2025-12-10 00:02:53,256:INFO:Declaring metric variables
+2025-12-10 00:02:53,259:INFO:Importing untrained model
+2025-12-10 00:02:53,263:INFO:AdaBoost Regressor Imported successfully
+2025-12-10 00:02:53,271:INFO:Starting cross validation
+2025-12-10 00:02:53,275:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-12-10 00:02:53,794:INFO:Calculating mean and std
+2025-12-10 00:02:53,794:INFO:Creating metrics dataframe
+2025-12-10 00:02:53,794:INFO:Uploading results into container
+2025-12-10 00:02:53,794:INFO:Uploading model into container now
+2025-12-10 00:02:53,794:INFO:_master_model_container: 15
+2025-12-10 00:02:53,794:INFO:_display_container: 2
+2025-12-10 00:02:53,794:INFO:AdaBoostRegressor(estimator=None, learning_rate=1.0, loss='linear',
+                  n_estimators=50, random_state=42)
+2025-12-10 00:02:53,794:INFO:create_model() successfully completed......................................
+2025-12-10 00:02:53,919:INFO:SubProcess create_model() end ==================================
+2025-12-10 00:02:53,919:INFO:Creating metrics dataframe
+2025-12-10 00:02:53,930:INFO:Initializing Gradient Boosting Regressor
+2025-12-10 00:02:53,930:INFO:Total runtime is 0.2104046702384949 minutes
+2025-12-10 00:02:53,933:INFO:SubProcess create_model() called ==================================
+2025-12-10 00:02:53,934:INFO:Initializing create_model()
+2025-12-10 00:02:53,934:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001BED95DC510>, estimator=gbr, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001BED9F1D3D0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-12-10 00:02:53,934:INFO:Checking exceptions
+2025-12-10 00:02:53,934:INFO:Importing libraries
+2025-12-10 00:02:53,934:INFO:Copying training dataset
+2025-12-10 00:02:53,940:INFO:Defining folds
+2025-12-10 00:02:53,940:INFO:Declaring metric variables
+2025-12-10 00:02:53,946:INFO:Importing untrained model
+2025-12-10 00:02:53,952:INFO:Gradient Boosting Regressor Imported successfully
+2025-12-10 00:02:53,960:INFO:Starting cross validation
+2025-12-10 00:02:53,963:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-12-10 00:02:54,757:INFO:Calculating mean and std
+2025-12-10 00:02:54,758:INFO:Creating metrics dataframe
+2025-12-10 00:02:54,759:INFO:Uploading results into container
+2025-12-10 00:02:54,760:INFO:Uploading model into container now
+2025-12-10 00:02:54,760:INFO:_master_model_container: 16
+2025-12-10 00:02:54,760:INFO:_display_container: 2
+2025-12-10 00:02:54,761:INFO:GradientBoostingRegressor(alpha=0.9, ccp_alpha=0.0, criterion='friedman_mse',
+                          init=None, learning_rate=0.1, loss='squared_error',
+                          max_depth=3, max_features=None, max_leaf_nodes=None,
+                          min_impurity_decrease=0.0, min_samples_leaf=1,
+                          min_samples_split=2, min_weight_fraction_leaf=0.0,
+                          n_estimators=100, n_iter_no_change=None,
+                          random_state=42, subsample=1.0, tol=0.0001,
+                          validation_fraction=0.1, verbose=0, warm_start=False)
+2025-12-10 00:02:54,761:INFO:create_model() successfully completed......................................
+2025-12-10 00:02:54,924:INFO:SubProcess create_model() end ==================================
+2025-12-10 00:02:54,924:INFO:Creating metrics dataframe
+2025-12-10 00:02:54,938:INFO:Initializing Light Gradient Boosting Machine
+2025-12-10 00:02:54,938:INFO:Total runtime is 0.22720596790313724 minutes
+2025-12-10 00:02:54,942:INFO:SubProcess create_model() called ==================================
+2025-12-10 00:02:54,943:INFO:Initializing create_model()
+2025-12-10 00:02:54,943:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001BED95DC510>, estimator=lightgbm, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001BED9F1D3D0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-12-10 00:02:54,943:INFO:Checking exceptions
+2025-12-10 00:02:54,943:INFO:Importing libraries
+2025-12-10 00:02:54,943:INFO:Copying training dataset
+2025-12-10 00:02:54,952:INFO:Defining folds
+2025-12-10 00:02:54,953:INFO:Declaring metric variables
+2025-12-10 00:02:54,957:INFO:Importing untrained model
+2025-12-10 00:02:54,961:INFO:Light Gradient Boosting Machine Imported successfully
+2025-12-10 00:02:54,971:INFO:Starting cross validation
+2025-12-10 00:02:54,975:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-12-10 00:02:56,336:INFO:Calculating mean and std
+2025-12-10 00:02:56,337:INFO:Creating metrics dataframe
+2025-12-10 00:02:56,340:INFO:Uploading results into container
+2025-12-10 00:02:56,340:INFO:Uploading model into container now
+2025-12-10 00:02:56,341:INFO:_master_model_container: 17
+2025-12-10 00:02:56,341:INFO:_display_container: 2
+2025-12-10 00:02:56,342:INFO:LGBMRegressor(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+              importance_type='split', learning_rate=0.1, max_depth=-1,
+              min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+              n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+              random_state=42, reg_alpha=0.0, reg_lambda=0.0, subsample=1.0,
+              subsample_for_bin=200000, subsample_freq=0)
+2025-12-10 00:02:56,342:INFO:create_model() successfully completed......................................
+2025-12-10 00:02:56,616:INFO:SubProcess create_model() end ==================================
+2025-12-10 00:02:56,616:INFO:Creating metrics dataframe
+2025-12-10 00:02:56,629:INFO:Initializing Dummy Regressor
+2025-12-10 00:02:56,629:INFO:Total runtime is 0.2554001291592916 minutes
+2025-12-10 00:02:56,641:INFO:SubProcess create_model() called ==================================
+2025-12-10 00:02:56,641:INFO:Initializing create_model()
+2025-12-10 00:02:56,641:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001BED95DC510>, estimator=dummy, fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001BED9F1D3D0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-12-10 00:02:56,642:INFO:Checking exceptions
+2025-12-10 00:02:56,642:INFO:Importing libraries
+2025-12-10 00:02:56,642:INFO:Copying training dataset
+2025-12-10 00:02:56,654:INFO:Defining folds
+2025-12-10 00:02:56,654:INFO:Declaring metric variables
+2025-12-10 00:02:56,659:INFO:Importing untrained model
+2025-12-10 00:02:56,662:INFO:Dummy Regressor Imported successfully
+2025-12-10 00:02:56,672:INFO:Starting cross validation
+2025-12-10 00:02:56,675:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-12-10 00:02:57,214:INFO:Calculating mean and std
+2025-12-10 00:02:57,217:INFO:Creating metrics dataframe
+2025-12-10 00:02:57,221:INFO:Uploading results into container
+2025-12-10 00:02:57,222:INFO:Uploading model into container now
+2025-12-10 00:02:57,222:INFO:_master_model_container: 18
+2025-12-10 00:02:57,222:INFO:_display_container: 2
+2025-12-10 00:02:57,223:INFO:DummyRegressor(constant=None, quantile=None, strategy='mean')
+2025-12-10 00:02:57,223:INFO:create_model() successfully completed......................................
+2025-12-10 00:02:57,354:INFO:SubProcess create_model() end ==================================
+2025-12-10 00:02:57,354:INFO:Creating metrics dataframe
+2025-12-10 00:02:57,375:INFO:Initializing create_model()
+2025-12-10 00:02:57,376:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001BED95DC510>, estimator=ElasticNet(alpha=1.0, copy_X=True, fit_intercept=True, l1_ratio=0.5,
+           max_iter=1000, positive=False, precompute=False, random_state=42,
+           selection='cyclic', tol=0.0001, warm_start=False), fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-12-10 00:02:57,376:INFO:Checking exceptions
+2025-12-10 00:02:57,377:INFO:Importing libraries
+2025-12-10 00:02:57,378:INFO:Copying training dataset
+2025-12-10 00:02:57,382:INFO:Defining folds
+2025-12-10 00:02:57,382:INFO:Declaring metric variables
+2025-12-10 00:02:57,382:INFO:Importing untrained model
+2025-12-10 00:02:57,382:INFO:Declaring custom model
+2025-12-10 00:02:57,382:INFO:Elastic Net Imported successfully
+2025-12-10 00:02:57,386:INFO:Cross validation set to False
+2025-12-10 00:02:57,387:INFO:Fitting Model
+2025-12-10 00:02:57,500:INFO:ElasticNet(alpha=1.0, copy_X=True, fit_intercept=True, l1_ratio=0.5,
+           max_iter=1000, positive=False, precompute=False, random_state=42,
+           selection='cyclic', tol=0.0001, warm_start=False)
+2025-12-10 00:02:57,500:INFO:create_model() successfully completed......................................
+2025-12-10 00:02:57,656:INFO:_master_model_container: 18
+2025-12-10 00:02:57,656:INFO:_display_container: 2
+2025-12-10 00:02:57,656:INFO:ElasticNet(alpha=1.0, copy_X=True, fit_intercept=True, l1_ratio=0.5,
+           max_iter=1000, positive=False, precompute=False, random_state=42,
+           selection='cyclic', tol=0.0001, warm_start=False)
+2025-12-10 00:02:57,656:INFO:compare_models() successfully completed......................................
+2025-12-10 00:02:57,662:INFO:Initializing tune_model()
+2025-12-10 00:02:57,662:INFO:tune_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001BED95DC510>, estimator=ElasticNet(alpha=1.0, copy_X=True, fit_intercept=True, l1_ratio=0.5,
+           max_iter=1000, positive=False, precompute=False, random_state=42,
+           selection='cyclic', tol=0.0001, warm_start=False), fold=None, round=4, n_iter=10, custom_grid=None, optimize=R2, custom_scorer=None, search_library=scikit-learn, search_algorithm=None, early_stopping=False, early_stopping_max_iters=10, choose_better=True, fit_kwargs=None, groups=None, return_tuner=False, verbose=True, tuner_verbose=True, return_train_score=False, kwargs={})
+2025-12-10 00:02:57,662:INFO:Checking exceptions
+2025-12-10 00:02:57,681:INFO:Copying training dataset
+2025-12-10 00:02:57,689:INFO:Checking base model
+2025-12-10 00:02:57,690:INFO:Base model : Elastic Net
+2025-12-10 00:02:57,703:INFO:Declaring metric variables
+2025-12-10 00:02:57,712:INFO:Defining Hyperparameters
+2025-12-10 00:02:57,860:INFO:Tuning with n_jobs=-1
+2025-12-10 00:02:57,860:INFO:Initializing RandomizedSearchCV
+2025-12-10 00:02:58,086:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.089e+03, tolerance: 4.634e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:02:58,098:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.650e+03, tolerance: 3.950e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:02:58,108:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.213e+03, tolerance: 3.925e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:02:58,114:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.699e+03, tolerance: 3.950e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:02:58,114:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.335e+03, tolerance: 4.547e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:02:58,139:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.265e+03, tolerance: 3.953e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:02:58,155:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.195e+03, tolerance: 4.511e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:02:58,169:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.167e+03, tolerance: 4.551e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:02:58,347:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.449e+03, tolerance: 4.542e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:02:58,377:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.462e+03, tolerance: 4.500e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:02:58,394:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.337e+03, tolerance: 3.925e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:02:58,407:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.325e+03, tolerance: 4.511e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:02:58,420:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.221e+03, tolerance: 4.634e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:02:58,440:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.378e+03, tolerance: 3.953e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:02:58,464:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.442e+03, tolerance: 4.547e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:02:58,476:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.810e+03, tolerance: 3.950e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:02:58,624:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.284e+03, tolerance: 4.551e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:02:58,707:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.563e+03, tolerance: 4.500e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:02:58,723:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.559e+03, tolerance: 4.542e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:02:58,771:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.791e+04, tolerance: 3.925e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:02:58,888:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.770e+04, tolerance: 3.953e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:02:58,930:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.873e+04, tolerance: 4.511e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:02:58,944:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.872e+04, tolerance: 4.634e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:02:58,978:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.918e+04, tolerance: 3.950e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:02:58,982:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.788e+04, tolerance: 4.551e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:02:58,999:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.872e+04, tolerance: 4.547e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:02:59,020:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.773e+03, tolerance: 3.950e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:02:59,043:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.930e+04, tolerance: 3.950e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:02:59,155:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.875e+04, tolerance: 4.500e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:02:59,207:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.885e+04, tolerance: 4.542e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:02:59,675:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 5.679e+03, tolerance: 4.634e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:02:59,720:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 5.805e+03, tolerance: 4.511e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:02:59,772:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 5.975e+03, tolerance: 4.547e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:02:59,774:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 5.792e+03, tolerance: 4.551e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:02:59,792:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 5.913e+03, tolerance: 3.925e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:02:59,832:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 6.530e+03, tolerance: 3.950e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:02:59,848:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 6.482e+03, tolerance: 3.950e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:02:59,869:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 5.987e+03, tolerance: 3.953e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:02:59,958:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 6.197e+03, tolerance: 4.500e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:03:00,127:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 6.201e+03, tolerance: 4.542e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:03:00,521:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 9.908e+03, tolerance: 4.511e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:03:00,682:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 9.762e+03, tolerance: 4.634e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:03:00,713:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 9.682e+03, tolerance: 3.953e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:03:00,728:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.004e+04, tolerance: 4.547e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:03:00,789:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.057e+04, tolerance: 3.950e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:03:00,792:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 9.782e+03, tolerance: 3.925e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:03:00,829:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.055e+04, tolerance: 3.950e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:03:00,829:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.019e+04, tolerance: 4.500e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:03:00,889:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 9.696e+03, tolerance: 4.551e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:03:00,972:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.020e+04, tolerance: 4.542e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:03:00,980:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.049e+04, tolerance: 4.511e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:03:01,078:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.040e+04, tolerance: 3.925e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:03:01,141:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.107e+04, tolerance: 3.950e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:03:01,155:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.023e+04, tolerance: 3.953e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:03:01,218:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.034e+04, tolerance: 4.634e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:03:01,234:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.022e+04, tolerance: 4.551e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:03:01,244:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.113e+04, tolerance: 3.950e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:03:01,289:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.053e+04, tolerance: 4.547e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:03:01,340:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.068e+04, tolerance: 4.500e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:03:01,378:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 1.067e+04, tolerance: 4.542e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:03:01,831:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.474e+03, tolerance: 4.511e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:03:01,925:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.500e+03, tolerance: 3.925e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:03:01,930:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.983e+03, tolerance: 3.950e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:03:01,947:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.543e+03, tolerance: 3.953e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:03:01,989:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.364e+03, tolerance: 4.634e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:03:02,031:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.598e+03, tolerance: 4.547e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:03:02,055:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.438e+03, tolerance: 4.551e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:03:02,060:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.949e+03, tolerance: 3.950e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:03:02,179:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.729e+03, tolerance: 4.500e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:03:02,189:WARNING:C:\Users\gabri\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sklearn\linear_model\_coordinate_descent.py:678: ConvergenceWarning: Objective did not converge. You might want to increase the number of iterations, check the scale of the features or consider increasing regularisation. Duality gap: 4.724e+03, tolerance: 4.542e+01
+  model = cd_fast.enet_coordinate_descent(
+
+2025-12-10 00:03:02,239:INFO:best_params: {'actual_estimator__l1_ratio': 0.612, 'actual_estimator__fit_intercept': True, 'actual_estimator__alpha': 5.58}
+2025-12-10 00:03:02,240:INFO:Hyperparameter search completed
+2025-12-10 00:03:02,240:INFO:SubProcess create_model() called ==================================
+2025-12-10 00:03:02,241:INFO:Initializing create_model()
+2025-12-10 00:03:02,241:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001BED95DC510>, estimator=ElasticNet(alpha=1.0, copy_X=True, fit_intercept=True, l1_ratio=0.5,
+           max_iter=1000, positive=False, precompute=False, random_state=42,
+           selection='cyclic', tol=0.0001, warm_start=False), fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001BED05EA390>, model_only=True, return_train_score=False, error_score=0.0, kwargs={'l1_ratio': 0.612, 'fit_intercept': True, 'alpha': 5.58})
+2025-12-10 00:03:02,241:INFO:Checking exceptions
+2025-12-10 00:03:02,242:INFO:Importing libraries
+2025-12-10 00:03:02,242:INFO:Copying training dataset
+2025-12-10 00:03:02,248:INFO:Defining folds
+2025-12-10 00:03:02,248:INFO:Declaring metric variables
+2025-12-10 00:03:02,252:INFO:Importing untrained model
+2025-12-10 00:03:02,252:INFO:Declaring custom model
+2025-12-10 00:03:02,256:INFO:Elastic Net Imported successfully
+2025-12-10 00:03:02,262:INFO:Starting cross validation
+2025-12-10 00:03:02,267:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-12-10 00:03:02,805:INFO:Calculating mean and std
+2025-12-10 00:03:02,805:INFO:Creating metrics dataframe
+2025-12-10 00:03:02,805:INFO:Finalizing model
+2025-12-10 00:03:02,918:INFO:Uploading results into container
+2025-12-10 00:03:02,919:INFO:Uploading model into container now
+2025-12-10 00:03:02,919:INFO:_master_model_container: 19
+2025-12-10 00:03:02,919:INFO:_display_container: 3
+2025-12-10 00:03:02,919:INFO:ElasticNet(alpha=5.58, copy_X=True, fit_intercept=True, l1_ratio=0.612,
+           max_iter=1000, positive=False, precompute=False, random_state=42,
+           selection='cyclic', tol=0.0001, warm_start=False)
+2025-12-10 00:03:02,919:INFO:create_model() successfully completed......................................
+2025-12-10 00:03:03,045:INFO:SubProcess create_model() end ==================================
+2025-12-10 00:03:03,045:INFO:choose_better activated
+2025-12-10 00:03:03,048:INFO:SubProcess create_model() called ==================================
+2025-12-10 00:03:03,049:INFO:Initializing create_model()
+2025-12-10 00:03:03,049:INFO:create_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x000001BED95DC510>, estimator=ElasticNet(alpha=1.0, copy_X=True, fit_intercept=True, l1_ratio=0.5,
+           max_iter=1000, positive=False, precompute=False, random_state=42,
+           selection='cyclic', tol=0.0001, warm_start=False), fold=KFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-12-10 00:03:03,049:INFO:Checking exceptions
+2025-12-10 00:03:03,051:INFO:Importing libraries
+2025-12-10 00:03:03,052:INFO:Copying training dataset
+2025-12-10 00:03:03,056:INFO:Defining folds
+2025-12-10 00:03:03,056:INFO:Declaring metric variables
+2025-12-10 00:03:03,056:INFO:Importing untrained model
+2025-12-10 00:03:03,056:INFO:Declaring custom model
+2025-12-10 00:03:03,056:INFO:Elastic Net Imported successfully
+2025-12-10 00:03:03,056:INFO:Starting cross validation
+2025-12-10 00:03:03,058:INFO:Cross validating with KFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2025-12-10 00:03:03,549:INFO:Calculating mean and std
+2025-12-10 00:03:03,549:INFO:Creating metrics dataframe
+2025-12-10 00:03:03,552:INFO:Finalizing model
+2025-12-10 00:03:03,759:INFO:Uploading results into container
+2025-12-10 00:03:03,759:INFO:Uploading model into container now
+2025-12-10 00:03:03,759:INFO:_master_model_container: 20
+2025-12-10 00:03:03,759:INFO:_display_container: 4
+2025-12-10 00:03:03,759:INFO:ElasticNet(alpha=1.0, copy_X=True, fit_intercept=True, l1_ratio=0.5,
+           max_iter=1000, positive=False, precompute=False, random_state=42,
+           selection='cyclic', tol=0.0001, warm_start=False)
+2025-12-10 00:03:03,759:INFO:create_model() successfully completed......................................
+2025-12-10 00:03:03,894:INFO:SubProcess create_model() end ==================================
+2025-12-10 00:03:03,897:INFO:ElasticNet(alpha=1.0, copy_X=True, fit_intercept=True, l1_ratio=0.5,
+           max_iter=1000, positive=False, precompute=False, random_state=42,
+           selection='cyclic', tol=0.0001, warm_start=False) result for R2 is 0.3401
+2025-12-10 00:03:03,898:INFO:ElasticNet(alpha=5.58, copy_X=True, fit_intercept=True, l1_ratio=0.612,
+           max_iter=1000, positive=False, precompute=False, random_state=42,
+           selection='cyclic', tol=0.0001, warm_start=False) result for R2 is 0.416
+2025-12-10 00:03:03,898:INFO:ElasticNet(alpha=5.58, copy_X=True, fit_intercept=True, l1_ratio=0.612,
+           max_iter=1000, positive=False, precompute=False, random_state=42,
+           selection='cyclic', tol=0.0001, warm_start=False) is best model
+2025-12-10 00:03:03,898:INFO:choose_better completed
+2025-12-10 00:03:03,909:INFO:_master_model_container: 20
+2025-12-10 00:03:03,910:INFO:_display_container: 3
+2025-12-10 00:03:03,910:INFO:ElasticNet(alpha=5.58, copy_X=True, fit_intercept=True, l1_ratio=0.612,
+           max_iter=1000, positive=False, precompute=False, random_state=42,
+           selection='cyclic', tol=0.0001, warm_start=False)
+2025-12-10 00:03:03,910:INFO:tune_model() successfully completed......................................
