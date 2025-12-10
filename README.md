@@ -1,54 +1,97 @@
-# Análise Preditiva: Pokémon Catch Rate & Classificação de Lendários
+📊 Análise Preditiva de Pokémon: Catch Rate & Agrupamento
+Este projeto aplica técnicas avançadas de Estatística e Machine Learning para analisar dados de Pokémon. O objetivo é prever a dificuldade de captura (CatchRate) e classificar os Pokémon em seus respectivos grupos (Lendários, Míticos, Iniciais, etc.) com base em seus atributos de combate.
 
-Projeto de Modelagem Estatística e Machine Learning para prever a dificuldade de captura de Pokémons e classificar se um Pokémon é Lendário com base em seus status base. Este projeto utiliza técnicas de Regressão (OLS, Polinomial) e Classificação (Naive Bayes, Regressão Logística) com Python, Scikit-learn, Statsmodels e PyCaret.
+🗂️ Estrutura do Repositório
+A organização do projeto segue a seguinte estrutura:
 
-**Dataset utilizado:** [Pokémon Database (Kaggle)](https://www.kaggle.com/datasets/mrdew25/pokemon-database)
+Plaintext
 
----
+📁 Pokemon-Analytics/
+│
+├── 📓 análise pokemon.ipynb       # Notebook de EDA (Limpeza, Visualização e Testes Estatísticos)
+├── 📓 modelagem.ipynb             # Notebook de Machine Learning (Regressão, Classificação e AutoML)
+├── 📄 requirements.txt            # Lista de dependências para reprodução do ambiente
+├── 💾 Pokemon Database.csv        # Dataset original (Fonte: Kaggle)
+├── 💾 pokemon_dataset_cleaned.csv # Dataset processado e limpo
+├── 📝 logs.log                    # Logs de execução do PyCaret
+└── 📜 README.md                   # Documentação do projeto
+🎯 Objetivos do Projeto
+Regressão (Target: CatchRate): Prever a taxa de captura de um Pokémon utilizando seus status base (HP, Attack, Speed, etc.). Investigar se a relação entre poder e captura é linear ou não-linear.
 
-## 🎯 Objetivos do Projeto
+Classificação Multiclasse (Target: Group): Identificar corretamente a categoria do Pokémon (Legendary, Starter, Ultra Beast, Paradox, etc.) com base em seus atributos numéricos.
 
-O projeto visa responder a duas perguntas de negócio principais utilizando dados históricos de Pokémons:
+🛠️ Ferramentas Utilizadas
+Linguagem: Python 3
 
-1.  **Regressão (Target: `CatchRate`):** É possível prever a taxa de captura (dificuldade de capturar) de um Pokémon baseando-se apenas em seus atributos físicos e de combate (HP, Attack, Speed, etc.)?
-2.  **Classificação (Target: `is_legendary`):** Conseguimos identificar se um Pokémon é Lendário ou Comum apenas observando seus status base?
+Manipulação de Dados: Pandas, Numpy
 
-## 🛠️ Ferramentas e Bibliotecas
+Visualização: Seaborn, Matplotlib
 
-* **Linguagem:** Python 3.x
-* **Manipulação de Dados:** Pandas, Numpy
-* **Visualização:** Matplotlib, Seaborn
-* **Estatística e Inferência:** Statsmodels (OLS, Testes de Normalidade, VIF)
-* **Machine Learning:** Scikit-learn (GridSearch, Metrics, Preprocessing)
-* **AutoML:** PyCaret (Comparação e Tuning de modelos)
+Estatística: Scipy (Testes de Hipótese), Statsmodels (OLS, Diagnóstico de Resíduos)
 
-## 📊 Metodologia
+Machine Learning: Scikit-learn (Pipelines, GridSearch, Random Forest)
 
-1.  **Análise Exploratória (EDA):** Limpeza de dados, tratamento de nulos, engenharia de features (criação da flag `is_legendary`) e análise de correlação.
-2.  **Modelagem de Regressão:**
-    * Implementação de OLS (Ordinary Least Squares) via `statsmodels` para interpretação dos coeficientes.
-    * Diagnóstico de resíduos: Testes de normalidade (Shapiro-Wilk), Homocedasticidade e Multicolinearidade (VIF).
-    * Teste de não-linearidade com Regressão Polinomial.
-3.  **Modelagem de Classificação:**
-    * Definição de Baseline com Naive Bayes.
-    * Otimização de Regressão Logística via `GridSearchCV`.
-    * Tratamento de desbalanceamento de classes (Lendários são minoria).
-4.  **AutoML (Otimização):** Uso do `PyCaret` para comparar diversos algoritmos e validar a performance dos modelos manuais.
+AutoML: PyCaret (Seleção e Tuning automático de modelos)
 
-## 🚀 Como Executar
+📊 Metodologia Aplicada
+O projeto foi dividido em duas grandes etapas:
 
-1.  Clone este repositório.
-2.  Instale as dependências:
-    ```bash
-    pip install pandas numpy seaborn statsmodels scikit-learn pycaret matplotlib
-    ```
-3.  Certifique-se de que o arquivo `Pokemon Database.csv` está na raiz do diretório.
-4.  Execute o notebook `teste.ipynb` (ou o arquivo `.py` correspondente) em um ambiente Jupyter ou VS Code.
+1. Análise Exploratória (EDA)
+Limpeza rigorosa de dados (tratamento de formas regionais e nulos).
 
-## 📈 Resultados Principais
+Análise univariada e bivariada (histogramas, boxplots, correlações).
 
-* **Regressão:** O modelo estatístico confirmou que status mais altos (especialmente HP e Speed) reduzem significativamente a taxa de captura. O modelo polinomial superou o linear, indicando uma relação complexa entre poder e dificuldade de captura.
-* **Classificação:** A Regressão Logística otimizada obteve um excelente desempenho na identificação de Lendários, superando o baseline e mantendo um bom equilíbrio entre Precision e Recall.
+Testes Estatísticos: Aplicação de ANOVA para validar diferenças significativas de status entre os grupos de Pokémon.
 
----
-*Projeto desenvolvido para a disciplina de Modelagem Estatística / Machine Learning.*
+2. Modelagem Preditiva
+Regressão:
+
+Baseline com OLS (Ordinary Least Squares) e interpretação de coeficientes/p-valores.
+
+Diagnóstico de resíduos (Normalidade e Homocedasticidade).
+
+Comparação com Regressão Polinomial para capturar complexidade.
+
+Classificação:
+
+Implementação de Random Forest Classifier com balanceamento de classes.
+
+Otimização de hiperparâmetros via GridSearchCV (Scikit-Learn).
+
+Avaliação com métricas robustas (F1-Score, Precision, Recall por classe).
+
+AutoML:
+
+Uso do PyCaret para validar a performance dos modelos manuais através de comparação massiva de algoritmos.
+
+🚀 Instalação e Execução
+Para reproduzir este projeto localmente, siga os passos abaixo:
+
+Clone o repositório:
+
+Bash
+
+git clone https://github.com/seu-usuario/seu-repo.git
+cd seu-repo
+Instale as dependências: Certifique-se de ter o Python instalado e execute:
+
+Bash
+
+pip install -r requirements.txt
+Execute os Notebooks: Abra os arquivos no Jupyter Notebook ou VS Code na seguinte ordem:
+
+análise pokemon.ipynb (Gera o dataset limpo)
+
+modelagem.ipynb (Treina os modelos)
+
+📈 Resultados Principais
+Regressão: O modelo linear explicou a relação entre status e taxa de captura de forma satisfatória. A Regressão Polinomial não apresentou ganhos significativos, indicando que a complexidade adicional não era necessária (Navalha de Ockham).
+
+Classificação: O modelo Random Forest otimizado foi capaz de distinguir com alta precisão grupos complexos como Legendaries e Starters, superando modelos lineares simples. A otimização via GridSearch refinou a capacidade de generalização do modelo.
+
+📝 Licença e Créditos
+Este projeto está licenciado sob a licença MIT - sinta-se à vontade para usar e modificar.
+
+Fonte dos Dados: O dataset original foi obtido no Kaggle: Pokémon Database.
+
+Projeto desenvolvido para a disciplina de Modelagem Estatística / Machine Learning.
