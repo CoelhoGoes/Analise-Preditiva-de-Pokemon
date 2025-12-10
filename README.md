@@ -1,7 +1,3 @@
-Aqui está todo o conteúdo do README.md formatado e pronto para copiar e colar no seu arquivo.
-
-Markdown
-
 # 📊 Análise Preditiva de Pokémon: Catch Rate & Agrupamento
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python)
