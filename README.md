@@ -1,104 +1,240 @@
-# 📊 Análise Preditiva de Pokémon: Catch Rate & Agrupamento
+# 🎮 Análise Preditiva de Atributos e Raridade de Pokémon
 
-![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python)
-![Status](https://img.shields.io/badge/Status-Concluído-green?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
+[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)](https://jupyter.org/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-Este projeto aplica técnicas avançadas de **Estatística** e **Machine Learning** para analisar dados de Pokémon. O objetivo é prever a dificuldade de captura (`CatchRate`) e classificar os Pokémon em seus respectivos grupos (Lendários, Míticos, Iniciais, etc.) com base em seus atributos de combate.
+## 📋 Sobre o Projeto
+
+Este projeto acadêmico realiza uma **análise preditiva completa** sobre dados de Pokémon, utilizando técnicas de Machine Learning para resolver dois problemas principais:
+
+1. **Regressão**: Prever a **Taxa de Captura (Catch Rate)** de um Pokémon com base em seus atributos de combate
+2. **Classificação Multiclasse**: Identificar o **Grupo de Raridade** de um Pokémon (Legendary, Starter, Mythical, Paradox, Pseudo-Legendary, Ultra Beast)
+
+O projeto demonstra a aplicação prática de técnicas estatísticas e algoritmos de Machine Learning em um dataset real, seguindo metodologias científicas rigorosas de análise de dados.
 
 ---
 
-## 🗂️ Estrutura do Repositório
+## 🎯 Problema e Solução
 
-A organização do projeto segue a seguinte estrutura:
+### Problema
+
+- **Desafio 1**: Como prever a dificuldade de captura de um Pokémon baseado apenas em seus stats?
+- **Desafio 2**: É possível classificar automaticamente um Pokémon em seu grupo de raridade usando apenas atributos numéricos?
+
+### Solução Implementada
+
+Desenvolvimento de modelos preditivos utilizando:
+
+- **Regressão Linear (OLS)** e **Regressão Polinomial** para prever valores contínuos
+- **Random Forest Classifier** com balanceamento de classes para classificação multiclasse
+- **Análise estatística completa**: VIF, testes de normalidade, ANOVA, diagnóstico de resíduos
+- **AutoML com PyCaret** para otimização automática de hiperparâmetros
+
+---
+
+## 📊 Fonte dos Dados
+
+**Dataset**: [The Complete Pokemon Dataset - Kaggle](https://www.kaggle.com/datasets/rounakbanik/pokemon)
+
+- **Fonte**: Dataset público disponibilizado por Rounaki Banik no Kaggle
+- **Tamanho**: 1.199 registros de Pokémon (após limpeza)
+- **Features**: 27 atributos incluindo stats de combate, tipos, habilidades, grupos de raridade
+- **Período**: Pokémon das gerações 1 a 9
+
+**Citação**:
 
 ```text
-📁 Pokemon-Analytics/
+Banik, R. (2023). The Complete Pokemon Dataset. Kaggle. 
+https://www.kaggle.com/datasets/rounakbanik/pokemon
+```
+
+---
+
+## 🔬 Metodologia
+
+### 1. **Limpeza e Pré-processamento** (`limpeza.ipynb`)
+
+- Remoção de aspas extras em colunas textuais
+- Tratamento de valores nulos (imputação e remoção estratégica)
+- Padronização de nomes de colunas
+- Criação do arquivo limpo: `pokemon_dataset_cleaned.csv`
+
+### 2. **Feature Engineering**
+
+- Seleção de features numéricas: `HP`, `Attack`, `Defense`, `SpAtk`, `SpDef`, `Speed`, `Height`, `Weight`
+- Codificação de variáveis categóricas com `LabelEncoder`
+- Normalização com `StandardScaler`
+- Cálculo de `Base Stat Total (BST)` para análises adicionais
+
+### 3. **Análise Exploratória de Dados (EDA)** (`analise.ipynb`)
+
+- Estatísticas descritivas por grupo de raridade
+- Visualizações: distribuições, boxplots, heatmaps de correlação
+- Testes estatísticos: ANOVA, Teste T, Teste de Normalidade (Shapiro-Wilk)
+- Identificação de padrões e outliers
+
+### 4. **Modelagem de Regressão** (`modelagem.ipynb`)
+
+- **Ordinary Least Squares (OLS)**: Modelo baseline com análise completa
+  - Diagnóstico de multicolinearidade (VIF)
+  - Análise de resíduos (homocedasticidade e normalidade)
+  - Métricas: MAE, RMSE, R²
+- **Regressão Polinomial (grau 2)**: Captura de relações não-lineares
+- **Comparação de modelos**: Seleção do melhor desempenho
+
+### 5. **Modelagem de Classificação Multiclasse** (`modelagem.ipynb`)
+
+- **Random Forest Classifier**:
+  - 200 árvores de decisão
+  - Balanceamento automático de classes (`class_weight='balanced'`)
+  - Divisão estratificada (80% treino, 20% teste)
+- **Avaliação**:
+  - Classification Report por grupo
+  - Matriz de Confusão visual
+  - Análise de Feature Importance
+
+### 6. **Otimização com AutoML**
+
+- **PyCaret**: Comparação automática de 15+ algoritmos
+- Tuning de hiperparâmetros com Grid Search
+- Seleção do modelo com melhor F1-Score
+
+---
+
+## 📈 Resultados Chave
+
+### Regressão (Prever Catch Rate)
+
+- **R² (OLS)**: `[PLACEHOLDER - Adicionar valor após execução]`
+- **R² (Polinomial)**: `[PLACEHOLDER - Adicionar valor após execução]`
+- **RMSE**: `[PLACEHOLDER - Adicionar valor após execução]`
+- **Interpretação**: Modelos explicam aproximadamente XX% da variação na dificuldade de captura
+
+### Classificação Multiclasse (Prever Group)
+
+- **Acurácia (Random Forest)**: `[PLACEHOLDER - Adicionar valor após execução]`
+- **F1-Score Macro**: `[PLACEHOLDER - Adicionar valor após execução]`
+- **Melhor modelo PyCaret**: `[PLACEHOLDER - Adicionar nome do modelo]`
+
+**Insights**:
+
+- Stats mais importantes: `[PLACEHOLDER - Ex: Attack, BST, Speed]`
+- Grupos mais difíceis de classificar: `[PLACEHOLDER - Ex: Mythical vs Legendary]`
+
+---
+
+## 📁 Estrutura do Repositório
+
+```text
+Analise-Preditiva-de-Pokemon/
 │
-├── 📓 análise pokemon.ipynb       # Notebook de EDA (Limpeza, Visualização e Testes Estatísticos)
-├── 📓 modelagem.ipynb             # Notebook de Machine Learning (Regressão, Classificação e AutoML)
-├── 📄 requirements.txt            # Lista de dependências para reprodução do ambiente
-├── 💾 Pokemon Database.csv        # Dataset original (Fonte: Kaggle)
-├── 💾 pokemon_dataset_cleaned.csv # Dataset processado e limpo
-├── 📝 logs.log                    # Logs de execução do PyCaret
-└── 📜 README.md                   # Documentação do projeto
-🎯 Objetivos do Projeto
-Regressão (Target: CatchRate): Prever a taxa de captura de um Pokémon utilizando seus status base (HP, Attack, Speed, etc.). Investigar se a relação entre poder e captura é linear ou não-linear.
+├── 📓 limpeza.ipynb              # Notebook de limpeza e pré-processamento
+├── 📓 análise.ipynb      # Notebook de análise exploratória completa
+├── 📓 modelagem.ipynb            # Notebook de modelagem preditiva
+│
+├── 📊 Pokemon Database.csv       # Dataset original (bruto)
+├── 📊 pokemon_dataset_cleaned.csv # Dataset limpo (pronto para modelagem)
+│
+├── 📄 README.md                  # Documentação do projeto (este arquivo)
+├── 📄 requirements.txt           # Dependências do projeto
+├── 📄 .gitignore                 # Arquivos ignorados pelo Git
+│
+└── 📁 .git/                      # Controle de versão Git
+```
 
-Classificação Multiclasse (Target: Group): Identificar corretamente a categoria do Pokémon (Legendary, Starter, Ultra Beast, Paradox, etc.) com base em seus atributos numéricos.
+---
 
-🛠️ Ferramentas Utilizadas
-Linguagem: Python 3
+## 🚀 Como Executar
 
-Manipulação de Dados: Pandas, Numpy
+### Pré-requisitos
 
-Visualização: Seaborn, Matplotlib
+- Python 3.8 ou superior
+- pip (gerenciador de pacotes Python)
+- Git (opcional, para clonar o repositório)
 
-Estatística: Scipy (Testes de Hipótese), Statsmodels (OLS, Diagnóstico de Resíduos)
+### Passo 1: Clonar o Repositório
 
-Machine Learning: Scikit-learn (Pipelines, GridSearch, Random Forest)
+```bash
+git clone https://github.com/CoelhoGoes/Analise-Preditiva-de-Pokemon.git
+cd Analise-Preditiva-de-Pokemon
+```
 
-AutoML: PyCaret (Seleção e Tuning automático de modelos)
+### Passo 2: Criar Ambiente Virtual (Recomendado)
 
-📊 Metodologia Aplicada
-O projeto foi dividido em duas grandes etapas:
+```bash
+# Windows
+python -m venv venv
+venv\Scripts\activate
 
-1. Análise Exploratória (EDA)
-Limpeza rigorosa de dados (tratamento de formas regionais e nulos).
+# Linux/Mac
+python3 -m venv venv
+source venv/bin/activate
+```
 
-Análise univariada e bivariada (histogramas, boxplots, correlações).
+### Passo 3: Instalar Dependências
 
-Testes Estatísticos: Aplicação de ANOVA para validar diferenças significativas de status entre os grupos de Pokémon.
-
-2. Modelagem Preditiva
-Regressão:
-
-Baseline com OLS (Ordinary Least Squares) e interpretação de coeficientes/p-valores.
-
-Diagnóstico de resíduos (Normalidade e Homocedasticidade).
-
-Comparação com Regressão Polinomial para capturar complexidade.
-
-Classificação:
-
-Implementação de Random Forest Classifier com balanceamento de classes.
-
-Otimização de hiperparâmetros via GridSearchCV (Scikit-Learn).
-
-Avaliação com métricas robustas (F1-Score, Precision, Recall por classe).
-
-AutoML:
-
-Uso do PyCaret para validar a performance dos modelos manuais através de comparação massiva de algoritmos.
-
-🚀 Instalação e Execução
-Para reproduzir este projeto localmente, siga os passos abaixo:
-
-Clone o repositório:
-
-Bash
-
-git clone [https://github.com/seu-usuario/seu-repo.git](https://github.com/seu-usuario/seu-repo.git)
-cd seu-repo
-Instale as dependências: Certifique-se de ter o Python instalado e execute:
-
-Bash
-
+```bash
 pip install -r requirements.txt
-Execute os Notebooks: Abra os arquivos no Jupyter Notebook ou VS Code na seguinte ordem:
+```
 
-análise pokemon.ipynb (Gera o dataset limpo)
+### Passo 4: Iniciar Jupyter Notebook
 
-modelagem.ipynb (Treina os modelos)
+```bash
+jupyter notebook
+```
 
-📈 Resultados Principais
-Regressão: O modelo linear explicou a relação entre status e taxa de captura de forma satisfatória. A Regressão Polinomial não apresentou ganhos significativos, indicando que a complexidade adicional não era necessária (Navalha de Ockham).
+### Passo 5: Executar os Notebooks na Ordem
 
-Classificação: O modelo Random Forest otimizado foi capaz de distinguir com alta precisão grupos complexos como Legendaries e Starters, superando modelos lineares simples. A otimização via GridSearch refinou a capacidade de generalização do modelo.
+1. **`limpeza.ipynb`**: Gera o arquivo `pokemon_dataset_cleaned.csv`
+2. **`modelagem.ipynb`**: Análise exploratória detalhada e Modelos preditivos
 
-📝 Licença e Créditos
-Este projeto está licenciado sob a licença MIT - sinta-se à vontade para usar e modificar.
+> **Nota**: Execute as células sequencialmente (Shift + Enter) para reproduzir os resultados.
 
-Fonte dos Dados: O dataset original foi obtido no Kaggle: Pokémon Database.
+---
 
-Projeto desenvolvido para a disciplina de Modelagem Estatística / Machine Learning.
+## 🛠️ Tecnologias Utilizadas
+
+- **Linguagem**: Python 3.8+
+- **Manipulação de Dados**: pandas, numpy
+- **Visualização**: matplotlib, seaborn
+- **Machine Learning**: scikit-learn, statsmodels
+- **AutoML**: PyCaret
+- **Ambiente**: Jupyter Notebook
+
+---
+
+## 📚 Referências e Recursos
+
+1. **Dataset Original**: [The Complete Pokemon Dataset - Kaggle](https://www.kaggle.com/datasets/rounakbanik/pokemon)
+2. **Documentação Scikit-Learn**: [https://scikit-learn.org/](https://scikit-learn.org/)
+3. **Documentação PyCaret**: [https://pycaret.org/](https://pycaret.org/)
+4. **Statsmodels Documentation**: [https://www.statsmodels.org/](https://www.statsmodels.org/)
+
+---
+
+## 📝 Licença
+
+Este projeto foi desenvolvido para fins **acadêmicos e educacionais**.
+
+- **Dataset**: Disponibilizado sob licença pública no Kaggle
+- **Código**: Livre para uso educacional com atribuição adequada
+
+---
+
+## 👥 Autores
+
+### Gabriel Góes
+
+- GitHub: [@CoelhoGoes](https://github.com/CoelhoGoes)
+
+### Cauê Barroso
+
+- GitHub: [@cauebarroso](https://github.com/cauebarroso)
+
+**Instituição**: [Centro Universitário do Pará(Cesupa)]  
+**Curso**: [Bacharelado em Ciência da Computação]  
+**Disciplina**: [Modelagem Estatística]  
+**Ano**: 2025
+
+---
