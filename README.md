@@ -198,7 +198,7 @@ jupyter notebook
 - **Linguagem**: Python 3.8+
 - **Manipulação de Dados**: pandas, numpy
 - **Visualização**: matplotlib, seaborn
-- **Machine Learning**: scikit-learn, statsmodels
+- **Machine Learning**: scikit-learn, statsmodels, scipy
 - **AutoML**: PyCaret
 - **Ambiente**: Jupyter Notebook
 
