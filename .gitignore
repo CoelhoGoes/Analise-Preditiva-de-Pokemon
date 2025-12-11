@@ -193,6 +193,7 @@ Temporary Items
 # ────────────────────────────────────────────────────────────────────────────
 # ARQUIVOS DE DADOS (Opcional - descomente se quiser ignorar CSVs grandes)
 # ────────────────────────────────────────────────────────────────────────────
+pokemon_dataset_cleaned.csv
 # *.csv
 # *.xlsx
 # *.xls
